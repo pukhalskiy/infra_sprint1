@@ -1,0 +1,6 @@
+IP: 158.160.72.194
+name_taski: https://perineum14.hopto.org/
+name_kittygram: https://kittygramm1444.myftp.org/
+login: admin
+password: admin
+
