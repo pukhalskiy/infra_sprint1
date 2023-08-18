@@ -4,7 +4,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
 
-
 from cats.views import AchievementViewSet, CatViewSet
 
 

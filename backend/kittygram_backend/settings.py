@@ -1,7 +1,6 @@
 import os
 from pathlib import Path
 
-
 from dotenv import load_dotenv
 
 
@@ -14,9 +13,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = os.getenv('DEBUG') == 'True'
 
-HOSTS = os.getenv('HOSTS')
-
-ALLOWED_HOSTS = HOSTS.split(',') if HOSTS is not None else []
+ALLOWED_HOSTS = os.getenv('HOSTS').split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
