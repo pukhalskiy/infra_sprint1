@@ -6,11 +6,9 @@ from rest_framework import routers
 
 from cats.views import AchievementViewSet, CatViewSet
 
-
 router = routers.DefaultRouter()
 router.register(r'cats', CatViewSet)
 router.register(r'achievements', AchievementViewSet)
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -18,7 +16,6 @@ urlpatterns = [
     path('api/', include('djoser.urls')),  # Работа с пользователями
     path('api/', include('djoser.urls.authtoken')),  # Работа с токенами
 ]
-
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
